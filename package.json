@@ -1,10 +1,10 @@
 {
-  "name": "FOLDER-ON-GITHUB",
+  "name": "goit-react-hw-02-phonebook",
   "version": "0.1.0",
-  "description": "FOLDER-ON-GITHUB",
+  "description": "goit-react-hw-02-phonebook",
   "private": true,
-  "homepage": "https://NICK-NAME-ON-GITHUB.github.io/FOLDER-ON-GITHUB",
-  "author": "AUTHOR",
+  "homepage": "https://axer4.github.io/goit-react-hw-02-phonebook",
+  "author": "Aleksey Borshch",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -15,6 +15,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -52,5 +53,15 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axer4/goit-react-hw-02-phonebook.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axer4/goit-react-hw-02-phonebook/issues"
   }
 }
