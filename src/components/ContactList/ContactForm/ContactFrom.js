@@ -33,7 +33,7 @@ export default class ContactForm extends Component {
             onChange={this.props.onChangeInputHandler}
             className = {styles.input}
           /></label>
-        <button type="button" className = {styles.button} onClick={this.props.addContactHandler}>Add Contact</button>
+        <button type="button" className={styles.button} onClick={this.props.addContactHandler}>Add Contact</button>
       </form></>
 } }
 

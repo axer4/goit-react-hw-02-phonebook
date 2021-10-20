@@ -21,10 +21,15 @@ export default class PhoneBook extends Component {
     })
   }
   addContactHandler = e => {
-    this.dublicateAlert(this.state.name);
-    this.setState(prevState => {
-      return prevState.contacts.push({name : this.state.name , id : uuidv4(), number:this.state.number})
-    })
+    // this.dublicateAlert(this.state.name)
+    if (this.dublicateAlert(this.state.name)) {
+      return 
+    }
+    else {
+      this.setState(prevState => {
+        return prevState.contacts.push({ name: this.state.name, id: uuidv4(), number: this.state.number })
+      })
+    }
   }
   handleFilterChange = (e) => {
     this.setState({ filter: e.target.value })
@@ -32,6 +37,7 @@ export default class PhoneBook extends Component {
   dublicateAlert = (name) => {
     if (this.state.contacts.find(contact => contact.name.toLowerCase() === name.toLowerCase())) {
       alert(`${name} is already in contacts`)
+      return true
   }
   }
   deleteContact = (id) => {
